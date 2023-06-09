@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Assignment 53-57</h1>
+    <h2>EVENTS</h2>
+
+    <h1>Image Modal </h1>
+
+    <!-- Images -->
+    <img src="iPhone.JPG" alt="Image 1" width="300px" height="50%" onclick="openModal(this.src)"/>
+    <img src="oppo.JPG" alt="Image 2" width="300px" height="50%" onclick="openModal(this.src)"/>
+    <img src="sumsung.JPG" alt="Image 3" width="300px" height="50%" onclick="openModal(this.src)"/>
+    <img src="vivo.JPG" alt="Image 4" width="300px" height="50%" onclick="openModal(this.src)"/>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImg" />
+    </div>
+
+    <!-- 2. Create a paragraph and two buttons “zoom in ”(+) and “zoom out”(-).
+ On each click on “zoom in”(+) , add 10px in font size of paragraph.
+ And on each click on “zoom out”(-) , minus 10px in font size of paragraph.
+Paragraph zoom functions -->
+    <!-- Paragraph -->
+    <h1> Paragraph Zoom</h1>
+    <p id="myParagraph">
+      This is a paragraph. Click the buttons below to zoom in or out.
+    </p>
+    <button onclick="zoomIn()">Zoom In (+)</button>
+    <button onclick="zoomOut()">Zoom Out (-)</button>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

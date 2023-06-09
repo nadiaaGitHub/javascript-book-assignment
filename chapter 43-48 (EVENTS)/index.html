@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Assignment 43-48</h1>
+    <h2>EVENTS</h2>
+    <a href="#" onclick="showAlert()">Click me</a>
+    <div>
+      <img
+        src="iPhone.JPG"
+        class="mobile-img"
+        width="350px"
+        onclick="showMessage('Thanks for clicking on Mobile 1!', this)"
+      />
+      <img
+        src="sumsung.JPG"
+        class="mobile-img"
+        width="350px"
+        onclick="showMessage('Thanks for clicking on Mobile 2!', this)"
+      />
+      <img
+        src="oppo.JPG"
+        class="mobile-img"
+        width="350px"
+        onclick="showMessage('Thanks for clicking on Mobile 3!', this)"
+      />
+    </div>
+
+    
+<!-- 3. Display 10 student records in table and each row should contain a delete
+button. If you click on a button to delete a record, entire row should be
+ deleted.Before delete After click on delete button on “Mark ” row -->
+
+</head>
+<body>
+<h1>Student Records</h1>
+<table id="studentTable">
+  <thead>
+    <tr>
+      <th>Student ID</th>
+      <th>Name</th>
+      <th>Grade</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>John Doe</td>
+      <td>10</td>
+      <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Jane Smith</td>
+      <td>9</td>
+      <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+ 
+    <tr>
+      <td>10</td>
+      <td>Michael Johnson</td>
+      <td>11</td>
+      <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- 4. Display an image in browser. Change the picture on mouseover and set the
+first picture on mouseout. -->
+
+<img src="mobile1.png" onmouseover="this.src='mobile.3.png'" onmouseout="this.src='mobile1.png'">
+
+<!-- 5. Show a counter in browser. Counter should increase on click on increase
+button and decrease on click on decrease button. And show updated counter
+value in browser. -->
+<p id="counter">0</p>
+<button onclick="increase()">Increase</button>
+<button onclick="decrease()">Decrease</button>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
